@@ -17,7 +17,7 @@ const demarrerTout = async () => {
   // Accès caméra
   const stream = await navigator.mediaDevices.getUserMedia({
     video: {
-      facingMode: 'user', // "environment" pour caméra arrière
+      facingMode: 'environment', // "environment" pour caméra arrière
       width: { ideal: 640 },
       height: { ideal: 480 }
     },
